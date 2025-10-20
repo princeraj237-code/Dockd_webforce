@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dockD Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Do<span class="highlight">ck D</span></h2>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.htm">Home</a>
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">My Files</a>
+        <a href="#">Shared</a>
+        <a href="#">Settings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <h2>Welcome back, <span class="username">Kamlesh</span> 👋</h2>
+        <div class="topbar-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search files..." />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="user-icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Overview Cards -->
+      <section class="overview">
+        <div class="card">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <h3>Storage Used</h3>
+          <p>32.5 GB / 100 GB</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-folder"></i>
+          <h3>Total Files</h3>
+          <p>1,248 Files</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-share-alt"></i>
+          <h3>Shared Files</h3>
+          <p>87 Files</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-trash"></i>
+          <h3>Trash</h3>
+          <p>23 Items</p>
+        </div>
+      </section>
+
+      <!-- Recent Uploads -->
+      <section class="recent-section">
+        <div class="section-header">
+          <h2>Recent Uploads</h2>
+          <button class="upload-btn"><i class="fas fa-plus"></i> Upload</button>
+        </div>
+
+        <table class="recent-table">
+          <thead>
+            <tr>
+              <th>File Name</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-file-pdf"></i> Project_Report.pdf</td>
+              <td>PDF</td>
+              <td>2.3 MB</td>
+              <td>Oct 18, 2025</td>
+              <td>
+                <i class="fas fa-download"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-image"></i> Design_UI.png</td>
+              <td>Image</td>
+              <td>1.2 MB</td>
+              <td>Oct 17, 2025</td>
+              <td>
+                <i class="fas fa-download"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-file-word"></i> Resume.docx</td>
+              <td>Document</td>
+              <td>800 KB</td>
+              <td>Oct 15, 2025</td>
+              <td>
+                <i class="fas fa-download"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-trash"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
