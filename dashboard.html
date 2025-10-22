@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dockD - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <button class="hamburger" aria-label="Toggle navigation" data-action="toggle-sidebar">☰</button>
+            <div class="brand"><span class="brand-strong">Do</span>ck D</div>
+            <nav class="top-actions">
+                <input class="search" placeholder="Search files..." aria-label="Search files">
+                <a href="auth.html" class="btn small">Kamlesh</a>
+            </nav>
+        </header>
+        <aside class="sidebar" data-open>
+            <div class="sidebar-inner">
+                <div class="logo">
+                    <h2><span class="brand-strong">Do</span>ck D</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="dashboard.html">Dashboard</a>
+                    <a href="#">My Files</a>
+                    <a href="#">Shared</a>
+                    <a href="#">Settings</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <small>© dockD 2025</small>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="page-header">
+                <h1>Welcome back, <span class="muted">User</span> 👋</h1>
+            </header>
+            <section class="overview">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-icon">☁️</div>
+                        <div>
+                            <h4>Storage Used</h4>
+                            <p>32.5 GB / 100 GB</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">📁</div>
+                        <div>
+                            <h4>Total Files</h4>
+                            <p>1,248 Files</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">🔗</div>
+                        <div>
+                            <h4>Shared Files</h4>
+                            <p>87 Files</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">🗑️</div>
+                        <div>
+                            <h4>Trash</h4>
+                            <p>23 Items</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recent">
+                <div class="recent-header">
+                    <h2>Recent Uploads</h2>
+                    <div>
+                        <label class="upload-btn"><input type="file" hidden>Upload</label>
+                    </div>
+                </div>
+                <table class="file-table" aria-live="polite">
+                    <thead>
+                        <tr><th>File Name</th><th>Type</th><th>Size</th><th>Date</th><th>Action</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project_Report.pdf</td>
+                            <td>PDF</td>
+                            <td>2.3 MB</td>
+                            <td>Oct 18, 2025</td>
+                            <td class="actions">⤓ 🔗 🗑</td>
+                        </tr>
+                        <tr>
+                            <td>Design_UI.png</td>
+                            <td>Image</td>
+                            <td>1.2 MB</td>
+                            <td>Oct 17, 2025</td>
+                            <td class="actions">⤓ 🔗 🗑</td>
+                        </tr>
+                        <tr>
+                            <td>Resume.docx</td>
+                            <td>Document</td>
+                            <td>800 KB</td>
+                            <td>Oct 15, 2025</td>
+                            <td class="actions">⤓ 🔗 🗑</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <div class="overlay" data-action="close-sidebar"></div>
+    </div>
+</body>

@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dockD - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <button class="hamburger" aria-label="Toggle navigation" data-action="toggle-sidebar">☰</button>
+            <div class="brand"><span class="brand-strong">Do</span>ck D</div>
+            <nav class="top-actions">
+                <a href="auth.html" class="btn small">Login</a>
+            </nav>
+        </header>
+        <aside class="sidebar" data-open>
+            <div class="sidebar-inner">
+                <div class="logo">
+                    <h2><span class="brand-strong">Do</span>ck D</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#">Features</a>
+                    <a href="about.html">About Us</a>
+                    <a class="active" href="contact.html">Contact Us</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <small>© dockD 2025</small>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <section class="contact-panel">
+                <h1>Contact Us</h1>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="address" placeholder="Address">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="mobile" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="type" placeholder="Type">
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button class="btn primary" type="submit">Send</button>
+                    </div>
+                </form>
+                <div class="contact-info">
+                    <p>📍 1234, ABC Street, City, State, India</p>
+                    <p>📞 1800-768-XXX</p>
+                    <p>✉️ dockd@gmail.com</p>
+                    <div class="socials">🔵 🔴 🔗 📌</div>
+                </div>
+            </section>
+        </main>
+
+
+        <div class="overlay" data-action="close-sidebar"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dockD - Login / Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+
+<body class="auth-bg">
+    <div class="auth-center">
+        <div class="auth-card card">
+            <div class="auth-left">
+                <h2 id="form-title" style="margin-left:170px; color:rgb(223, 212, 212);">Login</h2>
+
+
+                <form id="login-form">
+                    <label class="field">Email<input type="email" id="login-email" required></label>
+                    <label class="field">Password<input type="password" id="login-password" required></label>
+                    <div class="form-actions"><button class="btn primary" type="submit">Login</button></div>
+                </form>
+
+
+                <form id="register-form" class="hidden">
+                    <label class="field">Name<input type="text" id="register-name" required></label>
+                    <label class="field">Email<input type="email" id="register-email" required></label>
+                    <label class="field">Password<input type="password" id="register-password" required></label>
+                    <div class="form-actions"><button class="btn primary" type="submit">Register</button></div>
+                </form>
+
+
+                <p class="toggle-link muted">Don't have an account? <a href="#" id="toggle-link">Register</a></p>
+            </div>
+            <div class="auth-right">
+                <!-- subtle image background panel for auth -->
+                <div class="auth-visual">
+                    <h3>Welcome to dockD</h3>
+                    <p class="muted">Securely store and share your media with zero hassle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

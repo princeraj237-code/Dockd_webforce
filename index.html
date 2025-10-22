@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dockD - Secure Cloud Storage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="common.js"></script>
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <button class="hamburger" aria-label="Toggle navigation" data-action="toggle-sidebar">☰</button>
+            <div class="brand"><span class="brand-strong">Do</span>ck D</div>
+            <div class="top-actions">
+                <a class="btn small" href="auth.html">Login</a>
+            </div>
+        </header>
+        <aside class="sidebar" data-open>
+            <div class="sidebar-inner">
+                <div class="logo">
+                    <h2><span class="brand-strong">Do</span>ck D</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#features">Features</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+                <div class="sidebar-footer"><small>© dockD 2025</small></div>
+            </div>
+        </aside>
+        <main class="main">
+            <section class="hero card-flex">
+                <div class="hero-left">
+                    <h1>Secure, Simple, and Smart Cloud Storage</h1>
+                    <p class="lead">Welcome to <strong>dockD</strong> — your personal cloud vault. Store, share, and
+                        access files seamlessly from anywhere with end-to-end encryption.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="auth.html">Get Started</a>
+                        <a class="btn ghost" href="#features">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="https://images.unsplash.com/photo-1526378723389-9c1dc4a3e9b6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f1a3f1d7c1b5f2a"
+                        alt="Cloud Illustration">
+                </div>
+            </section>
+            <section id="features" class="features">
+                <h2>Why Choose dockD?</h2>
+                <div class="cards">
+                    <article class="card feature">
+                        <div class="icon">🔒</div>
+                        <h3>End-to-End Encryption</h3>
+                        <p>Your files are secured with advanced encryption — only you can access your data.</p>
+                    </article>
+                    <article class="card feature">
+                        <div class="icon">🔁</div>
+                        <h3>Automatic Sync</h3>
+                        <p>Access the latest version of your files on any device, anytime.</p>
+                    </article>
+                    <article class="card feature">
+                        <div class="icon">🔗</div>
+                        <h3>Easy Sharing</h3>
+                        <p>Share files securely with colleagues and friends using custom links and permissions.</p>
+                    </article>
+                    <article class="card feature">
+                        <div class="icon">☁️</div>
+                        <h3>Unlimited Uploads</h3>
+                        <p>Upload without limits. We scale storage as your data grows — seamlessly.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="cta centered-card">
+                <h2>Start Your Cloud Journey Today!</h2>
+                <p>Join thousands who trust dockD for fast, secure, and private cloud storage.</p>
+                <a class="btn primary" href="auth.html">Create Free Account</a>
+            </section>
+        </main>
+
+
+        <div class="overlay" data-action="close-sidebar"></div>
+    </div>
+</body>
+
+</html>
